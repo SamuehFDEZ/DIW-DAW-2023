@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+    font-family: Arial;
+}
+
+table, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;    
+    text-align: center;
+    padding: 1px;
+    margin:auto;
+    font-family: Arial;
+
+}
+
+.cabecera {
+    color: #000000;
+    background-image: url("../img/fondo_gris.gif") ;
+
+}
+
+#cabeceraDeFila{
+    background-color:  #E6F3FF;
+}
+
+#yellow{
+    background-color:  #FFFFCC;
+}
+
+tr:hover{
+    background-color:#FFFF66 ;
+}

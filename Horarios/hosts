@@ -1,0 +1,28 @@
+# Standard host addresses
+127.0.0.1  localhost
+::1        localhost ip6-localhost ip6-loopback
+ff02::1    ip6-allnodes
+ff02::2    ip6-allrouters
+# This host address
+127.0.1.1  samuel-virtualbox
+192.168.4.201    www.diw01horarios.com
+192.168.4.202    www.diw02horarios.com
+192.168.4.203    www.diw03horarios.com
+192.168.4.204    www.diw04horarios.com
+192.168.4.205    www.diw05horarios.com
+192.168.4.206    www.diw06horarios.com
+192.168.4.207    www.diw07horarios.com
+192.168.4.208    www.diw08horarios.com
+192.168.4.209    www.diw09horarios.com
+192.168.4.210    www.diw10horarios.com
+192.168.4.211    www.diw11horarios.com
+192.168.4.212    www.diw12horarios.com
+192.168.4.213    www.diw13horarios.com
+192.168.4.214    www.diw14horarios.com
+192.168.4.215    www.diw15horarios.com
+192.168.4.216    www.diw16horarios.com
+192.168.4.217    www.diw17horarios.com
+192.168.4.218    www.diw18horarios.com
+192.168.4.219    www.diw19horarios.com
+192.168.4.220    www.diw20horarios.com
+

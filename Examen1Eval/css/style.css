@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest Guy");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.rebotar {
+  animation: rebotar 1s both;
+}
+
+@keyframes rebotar {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+body {
+  background: url("../espornets/pexels-leandro-boogalu-1390403.jpg") no-repeat;
+  background-size: cover;
+  height: 88em;
+}
+
+header h1 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+header {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  font-family: "Luckiest Guy";
+  font-size: 1.1em;
+  color: white;
+  border-bottom: 3px solid black;
+  background-color: rgba(69, 69, 69, 0.5);
+  background-repeat: no-repeat;
+  background-position: left 25px;
+  background-position-y: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+}
+
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6em;
+  color: silver;
+  text-align: center;
+  background-color: rgba(107, 170, 205, 0.35);
+}
+
+#page {
+  box-shadow: 5px 5px 10px rgb(150, 150, 150);
+  width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-top: 50px;
+}
+
+main {
+  margin-bottom: -31.2em;
+}
+
+p {
+  font-family: "Luckiest Guy";
+  font-size: 15px;
+  text-shadow: 0.2px 0.2px rgba(107, 170, 205, 0.35);
+}
+
+img {
+  border-radius: 25px;
+  box-shadow: 4px 4px 4px gray;
+  /* transform: scale(1.1) translate(-160px,-1px); */
+}
+
+li {
+  padding-top: 80px;
+  margin-top: 0px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  cursor: default;
+}
+
+#li1 {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin-top: -60px;
+  color: white;
+  text-shadow: 0.2px 0.2px rgb(255, 255, 255);
+}
+
+#li2 {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin-top: -60px;
+  color: white;
+  text-shadow: 0.2px 0.2px rgb(255, 255, 255);
+}
+
+#li3 {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin-top: -60px;
+  color: white;
+  text-shadow: 0.2px 0.2px rgb(255, 255, 255);
+}
+
+#secciones {
+  display: flex;
+}
+
+#li1:hover {
+  text-shadow: 0px 0px 5px #000000;
+  transition: 0.5s;
+}
+
+#li2:hover {
+  text-shadow: 0px 0px 5px #000000;
+  transition: 0.5s;
+}
+
+#li3:hover {
+  text-shadow: 0px 0px 5px #000000;
+  transition: 0.5s;
+}
+
+/* Estilos para la sublista (oculta inicialmente) */
+.submenu {
+  display: none;
+  position: absolute;
+  background: black; /* Color de fondo para todos los elementos de la lista */
+  list-style: none;
+  padding: 1px;
+}
+
+/* Estilo cuando el usuario pasa el ratón sobre la lista de Videos */
+#li2:hover .submenu {
+  display: grid;
+  z-index: 1;
+}
+
+/* Estilos para los elementos de la sublista */
+.submenu li {
+  margin: 1px;
+  text-align: center;
+  background: pink; /* Color de fondo para los elementos impares */
+  padding: 5px 0; /* Ajusta la altura de los cuadrados modificando el valor '5px' */
+}
+
+/* Estilos para los enlaces de la sublista */
+.submenu a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+
+/* Cambiar el color de fondo al pasar el ratón sobre los elementos de la sublista */
+.submenu li:hover {
+  background: #00f7ff; /* Color de fondo al pasar el ratón por encima de los elementos */
+}
+
+/* Estilo para el triángulo de encima del primer elemento */
+#li2 .submenu:before {
+  content: "";
+  position: absolute;
+  top: -10px; /* Ajusta la posición vertical del triángulo */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent pink transparent; /* Color del triángulo */
+}
+
+#hombre {
+  text-align: center;
+  background-color: rgba(0, 247, 255, 0.35);
+  width: 63em;
+}
+
+#mujer {
+  text-align: center;
+  background-color: rgba(213, 93, 156, 0.35);
+  width: 63em;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+}
+
+#repHombre {
+  width: 25em;
+  transition: width 1s ease 0s;
+}
+
+#repHombre:hover {
+  width: 30em;
+}
+
+#repMujer {
+  width: 25em;
+  transition: width 1s ease 0s;
+}
+
+#repMujer:hover {
+  width: 30em;
+}
+
+article p {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+aside {
+  position: relative;
+  left: 23em;
+  bottom: 14em;
+  font-size: 50px;
+  background-color: rgba(69, 69, 69, 0.5);
+  width: 6em;
+  height: 10em;
+  border-radius: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#sectionAside1 {
+  font-size: 20px;
+}
+
+#sectionAside2 {
+  font-size: 20px;
+}
+
+footer {
+  position: relative;
+  color: black;
+  text-shadow: 2px 2px 2px rgba(0, 247, 255, 0.35);
+  width: 100em;
+  font-size: 0.7em;
+  text-align: center;
+  background-color: rgba(252, 252, 252, 0.31);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

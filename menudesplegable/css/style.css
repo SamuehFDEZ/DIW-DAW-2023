@@ -1,0 +1,107 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+ padding-top: 20px;
+ text-align: center;
+}
+
+
+/* Menú principal */
+nav ul li {
+    display: inline-block;  /*Los ponemos en horizontal*/
+    text-decoration: none;  /*list-style: none;*/
+    margin: 50px;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*Submenu Desplegable*/
+#submenu {
+    /*El padre marca origen de las coordenadas*/
+    position: relative;
+}
+
+/*Enlaces del submenú*/
+#submenu ul li a {
+    color: white;
+    margin: auto;
+    text-decoration: none;
+}
+
+/*Todo el submenú*/
+#submenu ul {
+    /*Hijo marca las coordenadas como desea, por ser su padre relative*/
+    position: absolute;
+    left: 10px;
+    /*Para que se mantenga oculto*/
+    height: 0px;
+    overflow: hidden;
+    width: 145px;
+    /*Transición de altura, tipo y duración*/
+    transition: height linear 2s;
+    /*Para que no se solapen*/
+    z-index: 2;
+    border-radius: 0px 0px 8px 8px;
+
+}
+/*La transición*/
+#submenu:hover ul {
+    height: 200px;
+}
+
+
+/*Cada elemento del submenú */
+#submenu ul li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    margin: 0px;
+    background-color: #363230;
+}
+/*Solo Impares*/
+#submenu ul li:nth-child(odd) {
+    background-color: #504946 !important;
+}
+
+
+/* Redondear los bordes */
+#submenu ul li:first-child {
+    /*Redondeo superior*/
+    border-radius: 8px 8px 0px 0px;
+    margin-top: 15px;
+    position: relative;
+}
+#submenu ul li:last-child {
+    /*Redondeo inferior*/
+    border-radius: 0px 0px 8px 8px;
+}
+
+
+/*Para que aparezca el triángulo en el menú*/
+/*Son el 1º hijo del 2º nivel del submenú*/
+nav ul li ul li:first-child:before {
+    /*Sino nos sale nada*/
+    content: '';
+    /* Esta se referencia con la anterior relativa (padre) */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    border: 5px solid transparent;
+    /* Como es un cuadrado (BORDES) pero solo le pongo dimensión en la bottom
+    lo que conseguimos es que haga un triángulo */
+    border-bottom-color: #363230;
+     /* Posición del contenedor donde aparece, mitad en este caso */
+    left: 50%;
+    top: -11px;
+    margin-left: -5px;
+    z-index: 19;
+}

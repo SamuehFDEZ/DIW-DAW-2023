@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css?family=Luckiest Guy");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../espornets/pexels-leandro-boogalu-1390403.jpg") no-repeat;
+    background-size: cover;
+    height: 83em;
+}
+
+header h1 img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+header {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    font-family: 'Luckiest Guy';
+    font-size: 1.1em;
+    color: white;
+    border-bottom: 3px solid black;
+    background-color: rgba(69, 69, 69, 0.50);
+    background-repeat: no-repeat;
+    background-position: left 25px;
+    background-position-y: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px ;
+    padding-right: 100px;
+    text-align: center;
+}
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6em;
+    color: silver;
+    text-align: center;
+    background-color: rgba(107, 170, 205, 0.35);
+}
+
+#page {
+    box-shadow: 5px 5px 10px rgb(150, 150, 150);
+    width: 70em;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: 50px;
+}
+
+main {
+    margin-bottom: -31.2em;
+}
+
+p {
+    font-family: 'Luckiest Guy';
+    font-size: 15px;
+    text-shadow: 0.2px 0.2px rgba(107, 170, 205, 0.35);
+}
+
+img {
+    border-radius: 25px;
+    box-shadow: 4px 4px 4px gray;
+}
+
+li {
+    padding-top: 80px;
+    margin-top: 0px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    cursor: default;
+}
+
+#li1 {
+    background-repeat: no-repeat;
+    background-position-x: center ;
+    margin-top: -60px; 
+    color: white;
+    text-shadow: 0.2px 0.2px rgb(255, 255, 255);
+}
+
+#li2 {
+    background-repeat: no-repeat;
+    background-position-x: center ;
+    margin-top: -60px; 
+    color: white;
+    text-shadow: 0.2px 0.2px rgb(255, 255, 255);
+}
+
+#li3 {
+    background-repeat: no-repeat;
+    background-position-x: center ;
+    margin-top: -60px; 
+    color: white;
+    text-shadow: 0.2px 0.2px rgb(255, 255, 255);
+}
+
+#li1:hover {
+    text-shadow: 0px 0px 5px #000000;
+    transition: 0.5s;
+}
+
+#li2:hover {
+    text-shadow: 0px 0px 5px #000000;
+    transition: 0.5s;
+}
+
+#li3:hover {
+    text-shadow: 0px 0px 5px #000000;
+    transition: 0.5s;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: black;
+    list-style: none;
+    padding: 1px;
+}
+
+#li2:hover .submenu {
+    display: grid;
+    z-index: 1;
+}
+
+.submenu li {
+    margin: 1px;
+    text-align: center;
+    background: pink;
+    padding: 5px 0;
+}
+
+.submenu a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+.submenu li:hover {
+    background: #00f7ff;
+}
+
+#li2 .submenu:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 10px 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent pink transparent;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#reproductor {
+    background: rgba(0,0,150,.2);
+    position: relative;
+}
+
+video {
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 10px solid #CCCCCC;
+    border-radius: 5px;
+}
+
+#barra {
+    position: relative;
+    bottom: 1.1em; 
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 720px;
+    height: 16px;
+    border: 10px solid #CCCCCC;
+    background: #999999;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#progreso {
+    width: 0px;
+    height: 16px;
+    background: rgba(0,0,150,.2);
+}
+
+aside {
+    position: relative;
+    bottom: 25em;
+    float: right;
+    display: grid;
+    margin-right: 10em;
+    width: 7%;
+    height: 15em;
+}
+
+aside:hover {
+    transform: scale(1.5);
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+input {
+    background-color: #26ade3;
+    color: white;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+b {
+    margin-left: 19em;
+}
+
+footer {
+    position: relative;
+    color: black;
+    text-shadow: 2px 2px 2px rgba(0, 247, 255, 0.35);
+    width: 100em;
+    font-size: 0.7em;
+    text-align: center;
+    background-color: rgba(252, 252, 252, 0.31);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

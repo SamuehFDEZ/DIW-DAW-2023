@@ -1,0 +1,95 @@
+/*Importamos las fonts desde internet*/
+@import url("https://fonts.googleapis.com/css?family=League Gothic");
+@import url("https://fontlibrary.org//face/acknowledgement");
+
+#registro{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 710px;
+    border-top: 2px solid #888;
+    border-bottom: 2px solid #888;
+    text-align: center;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: url("../imgs/bg-form.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+label{
+    display: block;
+    margin: auto;
+    padding: auto;
+    align-items: center;
+    font-family: 'League Gothic';
+    font-size: 20px
+
+}
+/*En el mismo background podemos las tres 
+propiedades, el url la posicion, si repite o si no repite
+y luego ponemos su size y font family importada */
+h1{
+    font-size: 2em;
+    padding-bottom: 20px;
+    background: url("../imgs/bg-formtitle-left.png") left no-repeat,
+                url("../imgs/bg-formtitle-right.png") right no-repeat;
+    background-size: 100px auto;
+    font-family: 'AcknowledgementMedium';
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#registro-submit{
+    border: none;
+    border-radius: 5px;
+    background: radial-gradient(rgb(144, 144, 144), rgb(72, 72, 72));
+    color: white;    
+    font-size: 2em;
+    text-transform: capitalize;
+    font-family: Tahoma, Geneva, sans-serif;
+    opacity: 80%;
+}
+
+#registro-submit:hover{
+    opacity: 100%;
+    transition: linear;
+    transition-duration: 0.25s;
+}
+
+input:required{
+    background-image: url("../imgs/required.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+input:focus{
+    background-image: url("../imgs/valid.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #484848;
+    color: #fff;
+    text-shadow: none;
+}
+
+input:invalid:focus{
+    background-image: url("../imgs/invalid.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+input{
+    border: none;
+    background: none;
+    border-bottom: 1px solid black ;
+    width: 400px;
+    text-align: center;
+
+}
+
+#cantidad{
+    width: 70px;
+}
+/*esto es para la barra de selección*/
+#conocimientos{
+    accent-color: gray; 
+}    

@@ -1,0 +1,171 @@
+body{
+    background-color: rgb(64, 115, 121);
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-top:20px;
+}
+
+
+#caj13{
+    display: inline-flex;
+    margin-left: 20em;
+}
+
+#caj46{
+    display: inline-flex;
+    margin-left: 20em;
+
+}
+
+#header{
+    line-height: 80px;
+}
+
+
+#container{
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+
+
+#caja1{
+    border: 1px solid black;
+    width: 15em;
+    height: 5em;
+    border-radius: 52px 86px 28px 200px;
+    margin: 50px;
+    line-height: 75px;
+    text-align: center;
+
+
+}
+
+#caja2{
+    border: 1px solid black;
+    width: 15em;
+    height: 5em;
+    border-radius: 5px 5px 5px 5px;
+    margin: 50px;
+    line-height: 75px;
+    text-align: center;
+
+
+}
+
+#caja3{
+    border: 1px solid black;
+    width: 15em;
+    height: 5em;
+    border-radius: 50px 50px 50px 50px;
+    margin: 50px;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgb(125, 194, 201) 0%, rgb(218, 217, 226) 98%);
+    text-align: center;
+    line-height: 75px;
+
+
+}
+
+#caja4{
+    border: 1px solid black;
+    width: 15em;
+    height: 5em;
+    border-radius: 50px 50px 50px 50px;
+    margin: 50px;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 2%, rgba(9,203,221,1) 100%);
+    text-align: center;
+    line-height: 75px;
+
+
+}
+
+#caja5{
+    border: 1px solid black;
+    width: 15em;
+    height: 5em;
+    border-radius: 50px 50px 50px 50px;
+    margin: 50px;
+    text-align: center;
+    line-height: 75px;
+}
+
+#caja6{
+    border: 1px solid black;
+    width: 15em;
+    height: 5em;
+    margin: 50px;
+    text-align: center;
+    line-height: 75px;
+
+
+}
+
+#caja7{
+    border: 1px solid black;
+    width: 95%;
+    height: 4em;
+    margin: 50px;
+    border-radius: 50px 50px 50px 50px;
+    text-align: center;
+    box-shadow: 10px 10px 5px 0px rgb(66, 150, 172);
+    line-height: 55px;
+
+
+}
+
+#caja8{
+    border: 1px solid black;
+    width: 95%;
+    height: 4em;
+    margin: 50px;
+    border-radius: 50px 50px 50px 50px;
+    text-align: center;
+    line-height: 55px;
+
+
+}
+
+#caja9{
+    border: 1px solid black;
+    width: 95%;
+    height: 4em;
+    margin: 50px;
+    border-radius: 50px 50px 50px 50px;
+    text-align: center;
+    line-height: 55px;
+    text-shadow: 0px 3px 3px #35CECA;
+
+
+}
+
+#caja10{
+    border: 1px solid black;
+    width: 95%;
+    height: 4em;
+    margin: 50px;
+    border-radius: 50px 50px 50px 50px;
+    text-align: center;
+    line-height: 55px;
+
+    background: linear-gradient(90deg,#ffffff 0%, #2d829f 80%);
+
+
+}
+
+hr{
+    color: aqua;
+}
+
+p{
+    text-align: center;
+    line-height: 40px;
+}
+

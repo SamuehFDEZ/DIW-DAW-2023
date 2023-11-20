@@ -1,0 +1,416 @@
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
+* {
+  margin: 0;
+  padding: 0px;
+}
+
+label {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: bold;
+}
+
+body {
+  background: url("../espornets/tienda.JPG") no-repeat;
+  background-size: cover;
+  height: 85em;
+}
+
+h2 {
+  font-family: "Inter";
+  position: relative;
+  bottom: 40px;
+  border: 1px solid black;
+  width: 200px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+header h1 img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+header {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  font-family: "Luckiest Guy";
+  font-size: 1.1em;
+  color: white;
+  border-bottom: 3px solid black;
+  background-color: rgba(69, 69, 69, 0.5);
+  background-repeat: no-repeat;
+  background-position: left 25px;
+  background-position-y: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+}
+
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6em;
+  color: silver;
+  text-align: center;
+  background-color: rgba(107, 170, 205, 0.35);
+}
+
+#page {
+  box-shadow: 5px 5px 10px rgb(150, 150, 150);
+  width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-top: 50px;
+}
+
+main {
+  margin-bottom: -31.2em;
+}
+
+p {
+  font-family: "Inter";
+  font-size: 15px;
+}
+
+img {
+  border-radius: 25px;
+  box-shadow: 4px 4px 4px gray;
+}
+
+li {
+  padding-top: 80px;
+  margin-top: 0px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+  margin-left: 100px;
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+  cursor: default;
+}
+
+#li1 {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin-top: -60px;
+  color: white;
+  text-shadow: 0.2px 0.2px rgb(255, 255, 255);
+}
+
+#li1:hover {
+  text-shadow: 0px 0px 5px #000000;
+  transition: 0.5s;
+}
+
+#li2:hover {
+  text-shadow: 0px 0px 5px #000000;
+  transition: 0.5s;
+}
+
+#li3:hover {
+  text-shadow: 0px 0px 5px #000000;
+  transition: 0.5s;
+}
+
+#li2 {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin-top: -60px;
+  color: white;
+  text-shadow: 0.2px 0.2px rgb(255, 255, 255);
+}
+
+#li3 {
+  background-repeat: no-repeat;
+  background-position-x: center;
+  margin-top: -60px;
+  color: white;
+  text-shadow: 0.2px 0.2px rgb(255, 255, 255);
+}
+
+#secciones {
+  display: flex;
+}
+
+/* Estilos para la sublista (oculta inicialmente) */
+.submenu {
+  display: none;
+  position: absolute;
+  background: black; /* Color de fondo para todos los elementos de la lista */
+  list-style: none;
+  padding: 1px;
+}
+
+/* Estilo cuando el usuario pasa el ratón sobre la lista de Videos */
+#li2:hover .submenu {
+  display: grid;
+  z-index: 1;
+}
+
+/* Estilos para los elementos de la sublista */
+.submenu li {
+  margin: 1px;
+  text-align: center;
+  background: pink; /* Color de fondo para los elementos impares */
+  padding: 5px 0; /* Ajusta la altura de los cuadrados modificando el valor '5px' */
+}
+
+/* Estilos para los enlaces de la sublista */
+.submenu a {
+  display: flex;
+  text-decoration: none;
+  color: white;
+}
+
+/* Cambiar el color de fondo al pasar el ratón sobre los elementos de la sublista */
+.submenu li:hover {
+  background: #00f7ff; /* Color de fondo al pasar el ratón por encima de los elementos */
+}
+
+/* Estilo para el triángulo de encima del primer elemento */
+#li2 .submenu:before {
+  content: "";
+  position: absolute;
+  top: -10px; /* Ajusta la posición vertical del triángulo */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 10px 10px 10px;
+  border-style: solid;
+  border-color: transparent transparent pink transparent; /* Color del triángulo */
+}
+
+#hombre {
+  text-align: center;
+  background-color: rgba(0, 247, 255, 0.35);
+  width: 63em;
+}
+
+#mujer {
+  text-align: center;
+  background-color: rgba(213, 93, 156, 0.35);
+  width: 63em;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  background-color: rgba(200, 200, 200, 0.7);
+  text-align: left;
+  box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.4);
+}
+
+#repHombre {
+  width: 25em;
+}
+
+#repMujer {
+  width: 25em;
+}
+
+article p {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+aside {
+  position: relative;
+  left: 23em;
+  bottom: 14em;
+  font-size: 50px;
+  background-color: rgba(69, 69, 69, 0.5);
+  width: 6em;
+  height: 10em;
+  border-radius: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#sectionAside1 {
+  font-size: 20px;
+}
+
+#sectionAside2 {
+  font-size: 20px;
+}
+
+#contenedorFormulario {
+  position: relative;
+  display: inline-block;
+  margin: 50px;
+  width: 950px;
+  padding: 20px 50px 20px 50px;
+  background-color: rgba(200, 200, 200, 0.7);
+  text-align: left;
+  box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.4);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select {
+  display: inline-block;
+  border: 1px solid #e5e5e5;
+  /*Para insertar más de una sombra de caja al mismo elemento, basta con que pongamos una a
+continuación de otra separándolas con comas. Por ejemplo:
+box-shadow: 1px 1px 5px #cecece, 0px 0px 40px #fefefe;*/
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3),
+    inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+  color: black;
+  font-weight: bold;
+  padding: 1px 4px 1px 45px;
+  margin-bottom: 10px;
+  transition: 0.4s all ease-in;
+  height: 40px;
+  border-radius: 25px;
+}
+
+input[type="color"] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  height: 5em;
+  padding: 0;
+  width: 5em;
+}
+
+input[type="text"] {
+  top: 32px;
+  width: 330px;
+  /*
+Atajo de background para ahorrar las propiedades de -image, -repeat y -position
+*/
+}
+
+input[type="email"] {
+  top: 32px;
+  width: 330px;
+}
+
+input[type="tel"] {
+  top: 32px;
+  width: 190px;
+}
+
+input[type="tel"]:focus {
+  top: 32px;
+  width: 370px;
+  box-shadow: 0px 0px 12px rgb(255, 255, 255);
+  background: url("../espornets/valid.png") no-repeat 390px;
+}
+
+input[type="date"] {
+  top: 32px;
+  width: 120px;
+}
+
+input[type="date"]:focus {
+  top: 32px;
+  width: 200px;
+  box-shadow: 0px 0px 12px rgb(255, 255, 255);
+  background: url("../espornets/valid.png") no-repeat 390px;
+}
+
+input[type="number"] {
+  top: 32px;
+  width: 120px;
+}
+
+input[type="number"]:focus {
+  top: 32px;
+  width: 200px;
+  box-shadow: 0px 0px 12px rgb(255, 255, 255);
+  background: url("../espornets/valid.png") no-repeat 390px;
+}
+
+select {
+  top: 32px;
+  width: 280px;
+}
+
+select:focus {
+  top: 32px;
+  width: 380px;
+  box-shadow: 0px 0px 12px rgb(255, 255, 255);
+  background: url("../espornets/valid.png") no-repeat 390px;
+}
+
+input[type="text"]:focus {
+  top: 32px;
+  width: 370px;
+  box-shadow: 0px 0px 12px rgb(255, 255, 255);
+  background: url("../espornets/valid.png") no-repeat 390px;
+}
+
+input[type="text"]:focus:invalid {
+  top: 32px;
+  width: 370px;
+  box-shadow: 0px 0px 12px rgb(255, 255, 255);
+  background: url("../espornets/invalid.png") no-repeat 390px;
+}
+
+input[type="email"]:focus {
+  top: 32px;
+  width: 370px;
+  box-shadow: 0px 0px 12px rgb(255, 255, 255);
+  background: url("../espornets/valid.png") no-repeat 390px;
+}
+
+input[type="email"]:focus:invalid {
+  top: 32px;
+  width: 370px;
+  box-shadow: 0px 0px 12px rgb(255, 255, 255);
+  background: url("../espornets/invalid.png") no-repeat 390px;
+}
+
+input[type="submit"] {
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+  border: 1px solid #434343;
+  color: white;
+  background: linear-gradient(
+    0deg,
+    rgba(94, 94, 94, 1) 0%,
+    rgba(42, 42, 42, 1) 100%
+  );
+  box-shadow: inset 0px 1px 1px #353535;
+  cursor: pointer;
+  position: relative;
+  width: 120px;
+  border-radius: 25px;
+}
+
+input[type="submit"]:hover {
+  background: linear-gradient(
+    0deg,
+    rgba(42, 42, 42, 1) 0%,
+    rgba(94, 94, 94, 1) 100%
+  );
+}
+
+footer {
+  position: relative;
+  color: black;
+  text-shadow: 2px 2px 2px rgba(0, 247, 255, 0.35);
+  width: 100em;
+  font-size: 0.7em;
+  text-align: center;
+  background-color: rgba(252, 252, 252, 0.31);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

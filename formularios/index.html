@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <form id="registro" method="post"> 
+            <h1>Regístrate!</h1>
+
+            <label for="nombre">Mi nombre es:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email">Mi email es:<br>(Puedes introducir varios por serparado)</label><br>
+            <input type="text" id="email" name="email" multiple required><br><br>
+
+            <label for="recuerda">Recuérdame en este equipo</label><br>
+            <input type="checkbox" id="recuerda" name="recuerda"><br><br>
+
+            <label for="link">Mi dirección web es</label><br>
+            <input type="url" id="link" name="link" placeholder="http://ejemplo.com"><br><br>
+
+            <label for="password1">Me gustaría que mi password fuera:</label><br>
+            <label for="password1">(al menos seis carácteres sin espacios)</label><br>
+            <input type="password" id="password1" name="password1" pattern="\S{6,}" required><br><br>
+
+            <label for="password2">Mi password repetida es:</label><br>
+            <input type="password" id="password2" name="password2" pattern="\S{6,}" required><br><br>
+
+            <label for="conocimientos">En una escala de 1 a 10, mis conocimientos de HTML5 son:</label><br>
+            <input type="range" min="1" max="10" id="conocimientos" name="conocimientos"><br><br>
+
+            <label for="fechaInicio">Por favor inicia mi suscripción el día</label><br>
+            <input type="date" id="fechaInicio" name="fechaInicio"><br><br>
+
+            <label for="cantidad">Me gustaría recibir<input type="number" id="cantidad" value="1" min="0" max="5" name="cantidad">copias de<i>El manual de HTML</i></label><br><br>
+            
+            <label for="tambienCSS3">También regístrame para <i>EL manual de CSS3</i></label><br>
+            <input type="checkbox" id="tambienCSS3" name="tambienCSS3"><br><br>
+
+            <input type="button" id="registro-submit" name="registro-submit" value="ENVÍAME">
+
+        </form>
+</body>
+</html>

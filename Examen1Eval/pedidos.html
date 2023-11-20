@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="css/pedidos.css">
+    <link rel="icon" type="image/x-icon" href="espornets/espornets.png">
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            <h1 id="titulo"><img src="espornets/espornets.png" alt="espornets">Espornets</h1>
+        </header>
+        <nav>
+            <ul>
+                <li id="li1"><a href="index.html"> <strong> Home </a></strong>
+                <li id="li2"> <strong> Productos </strong>
+                    <ul class="submenu">
+                        <li><a href="hombre.html">Hombre</a></li>
+                        <li><a href="mujer.html">Mujer</a></li>
+                    </ul>
+                <li id="li3"><a href="pedidos.html"> <strong> Pedidos </a></strong>
+
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <div id="contenedorFormulario">
+                <h2>Contáctenos</h2><br><br>
+                <form>
+                    <label for="nombreApellidos">Nombre y apellidos</label><br><br>
+                    <input type="text" placeholder="Escriba su nombre y apellidos" required><br></br>
+
+                    <label for="DNI">DNI</label><br><br>
+                    <input type="text" placeholder="Escriba su DNI" pattern="[0-9]{8}[A-Za-z]{1}" required><br><br>
+
+                    <label for="email">Correo</label><br><br>
+                    <input type="email" placeholder="Escriba su email" required><br><br>
+
+                    <label for="telefonos">Teléfonos de contacto</label><br><br>
+                    <input type="tel" multiple placeholder="Escriba su teléfono" required><br><br>
+
+                    <label for="fecha">Fecha de nacimiento</label><br><br>
+                    <input type="date" required><br><br>
+
+                    <label for="pedidos">Pedidos</label><br><br>
+                    <select name="pedidos" required>
+                        <option value="ZH-120-RUN">Zapatilla mujer runner</option>
+                        <option value="ZH-120-PRO">Zapatilla mujer pronador</option>
+                        <option value="ZH-120-SUP">Zapatilla mujer suprinador</option>
+                        <option value="ZH-120-PRO">Zapatilla mujer profesional</option>
+                        <option value="ZH-120-RUN">Zapatilla hombre runner</option>
+                        <option value="ZH-120-PRO">Zapatilla hombre pronador</option>
+                        <option value="ZH-120-SUP">Zapatilla hombre suprinador</option>
+                        <option value="ZH-120-PRO">Zapatilla hombre profesional</option>
+                    </select><br><br>
+
+                    <label for="color">Color de la caja del producto</label>
+                    <input type="color" name="color" required><br><br>
+                    <label for="unidades">Número de unidades a comprar</label><br><br>
+                    <input type="number" name="unidades" required><br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+
+            </div>
+            <footer>
+                <b>ESPORNETS - Calzado deportivo de calidad para todos</b>
+            </footer>
+
+        </main>
+    </div>
+</body>
+
+</html>

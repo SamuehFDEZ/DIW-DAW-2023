@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    padding: 115px;
+    text-align: center;
+    background: linear-gradient(#e87d4f, #ffffff);
+}
+
+#page{
+    box-shadow: 5px 5px 10px rgb(150, 150, 150);
+    width: 63em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+header{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    font-family: Courier;
+    font-size: 1.1em;
+    color: white;
+    border-bottom: 6px solid black;
+    background-image: url("../imgs/logo.png"), linear-gradient(to top, #00b3ff, #686868);
+    background-repeat: no-repeat;
+    background-position: left 25px;
+    background-position-y: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px ;
+    padding-right: 100px;
+}
+
+nav{
+    font-family: Courier;
+    font-size: 1.4em;
+    color: silver;
+    text-align: center;
+    background-color: #e7e40a;
+    
+}
+
+li{
+    padding-top: 80px;
+    margin-top: 0px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    cursor: default;
+}
+
+#li1{
+    background-image: url("../imgs/book.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-top: 10px;
+    color: white;
+
+}
+
+#li2{
+    background-image: url("../imgs/film.png");
+    background-repeat: no-repeat;
+    background-position-x: center ;
+    margin-top: 10px;
+    color: white;
+
+
+}
+
+#li3{
+    background-image: url("../imgs/mail.png");
+    background-repeat: no-repeat;
+    background-position-x: center ;
+    margin-top: 10px;
+    color: white;
+
+}
+
+#li1:hover{
+    color: gray;
+}
+
+#li2:hover{
+    color: gray;
+}
+
+
+#li3:hover{
+    color: gray;
+}
+
+#content{
+    font-family: Verdana;
+    font-size: 0.8em;
+    background-color: white;
+    width:100%;
+    display: table
+}
+/*Bloque que contiene las imagenes de los lenguajes y sus textos, rodeados por el movil mediante los ultimos border */
+article{
+    width: 240px;
+    border: 1px lightgray solid ;
+    background-color: white;
+    text-align: center;
+    line-height: 1.8em;
+    padding-left: 5px ;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 22px ;
+    margin: 30px;
+    float: left;
+    border-image-source: url("../imgs/movil.png");
+    border-image-slice: 70 20 60 20;
+    border-width: 70px 10px 70px 10px ;
+    border-image-repeat:stretch;
+    
+}
+
+.article_header{
+    border-bottom: 1px solid #999999;
+
+}
+
+h2{
+    padding: 10px;
+    font-size: 1.2em;
+    background: radial-gradient(circle, rgb(233, 233, 233) 20%, rgb(255, 255, 255) 100%); 
+
+}
+
+footer{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+    font-size: 0.7em;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #00b3ff, #686868);
+    border-top: 6px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}

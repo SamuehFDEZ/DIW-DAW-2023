@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursobordes</title>
+    <link rel="stylesheet" href="css/videos.css">
+    <link rel="icon" type="image/x-icon" href="espornets/espornets.png">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id="page">
+        <main>
+            <header>
+                <h1 id="titulo"><img src="espornets/espornets.png" alt="espornets">Espornets</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li id="li1"><a href="index.html"> <strong> Home </a></strong></li>
+                    <li id="li2"> <strong> Productos </strong>
+                        <ul class="submenu">
+                            <li><a href="hombre.html">Hombre</a></li>
+                            <li><a href="mujer.html">Mujer</a></li>
+                        </ul>
+                    </li>
+                    <li id="li3"><a href="pedidos.html"> <strong> Pedidos </a></strong></li>
+                    <li id="li2"> <strong> Vídeos </strong>
+                        <ul class="submenu">
+                            <li><a href="videos.html">Vídeo 1</a></li>
+                            <li><a href="videos.html">Vídeo 2</a></li>
+                            <li><a href="videos.html">Vídeo 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav> 
+
+            <div id="reproductor">
+                <video id="medio" width="720" height="400"> 
+                    <!--No me ha dejado descargar ningun video-->
+                    <source src="video.mp3" type="video/mp4">
+                    <source src="video.mp3" type="video/ogg">
+                </video>
+
+                <div id="barra">
+                    <div id="progreso"></div>
+                </div>
+
+                <aside>
+                    <input type="button" id="reiniciar" value="reiniciar">
+                    <input type="button" id="retrasar" value="&laquo;">
+                    <input type="button" id="play" value="&#9658;">
+                    <input type="button" id="adelantar" value="&raquo;">
+                    <input type="button" id="silenciar" value="silenciar">
+                    <label>Volumen</label>
+                    <input type="button" id="menosVolumen" value="-">
+                    <input type="button" id="masVolumen" value="+">
+                </aside> 
+            </div>
+
+            <footer>
+                <b>HTML5 y CSS3</b><br> 
+                <b>Diseño de interfaces web-2DAW</b>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,245 @@
+/*Esto selecciona todos los elementos HTML de la página y establece sus márgenes y relleno en 0 píxeles, 
+lo que elimina los márgenes y el relleno predeterminados.*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*Establece varios estilos para el elemento <body> de la página, como el relleno, el color de fondo y la alineación del texto.*/
+body{
+    padding: 115px;
+    text-align: center;
+    background: linear-gradient(#e87d4f, #ffffff);
+}
+
+header h1{
+    position: relative;
+} 
+
+header h1 img{
+    position: absolute;
+    left: -75px;
+}
+
+#page{
+    box-shadow: 5px 5px 10px rgb(150, 150, 150);
+    width: 63em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+header{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    font-family: Courier;
+    font-size: 1.1em;
+    color: white;
+    border-bottom: 6px solid black;
+    background-image: linear-gradient(to top, #00b3ff, #686868);
+    background-repeat: no-repeat;
+    background-position: left 25px;
+    background-position-y: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px ;
+    padding-right: 100px;
+}
+
+nav{
+    font-family: Courier;
+    font-size: 1.4em;
+    color: silver;
+    text-align: center;
+    background-color: #e7e40a;
+    
+}
+
+
+
+li{
+    padding-top: 80px;
+    margin-top: 0px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    cursor: default;
+}
+
+#li1{
+    background-image: url("../imgs/book.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    margin-top: 10px;
+    color: white;
+    text-shadow: 0px 0px 5px white;
+
+
+}
+
+#li2{
+    background-image: url("../imgs/film.png");
+    background-repeat: no-repeat;
+    background-position-x: center ;
+    margin-top: 10px;
+    color: white;
+    text-shadow: 0px 0px 5px white;
+
+}
+
+#li3{
+    background-image: url("../imgs/mail.png");
+    background-repeat: no-repeat;
+    background-position-x: center ;
+    margin-top: 10px;
+    color: white;
+    text-shadow: 0px 0px 5px white;
+
+}
+
+#li1:hover{
+    text-shadow: 2px 2px 0px red;
+    transition: 0.5s;
+}
+
+#li2:hover{
+    text-shadow: 2px 2px 0px red;
+    transition: 0.5s;
+}
+
+
+#li3:hover{
+    text-shadow: 2px 2px 0px red;
+    transition: 0.5s;
+}
+
+/* Estilos para la sublista (oculta inicialmente) */
+.submenu {
+    display: none;
+    position: absolute;
+    background: #e34c26; /* Color de fondo para todos los elementos de la lista */
+    list-style: none;
+    padding: 1px;
+}
+
+/* Estilo cuando el usuario pasa el ratón sobre la lista de Videos */
+#li2:hover .submenu {
+    display: grid;
+    z-index: 1;
+}
+
+/* Estilos para los elementos de la sublista */
+.submenu li {
+    margin: 1px;
+    text-align: center;
+    background: #f06529; /* Color de fondo para los elementos impares */
+    padding: 5px 0; /* Ajusta la altura de los cuadrados modificando el valor '5px' */
+}
+
+/* Estilos para los enlaces de la sublista */
+.submenu a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+}
+
+/* Cambiar el color de fondo al pasar el ratón sobre los elementos de la sublista */
+.submenu li:hover {
+    background: #ff7e42; /* Color de fondo al pasar el ratón por encima de los elementos */
+}
+
+/* Estilo para el triángulo de encima del primer elemento */
+#li2 .submenu:before {
+    content: "";
+    position: absolute;
+    top: -10px; /* Ajusta la posición vertical del triángulo */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 10px 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent #e34c26 transparent; /* Color del triángulo */
+}
+
+#reproductor{
+    background: #EEEEEE;
+    position: relative;
+}
+
+video{
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 10px solid #CCCCCC;
+    border-radius: 5px;
+
+}
+
+#barra{
+    position: relative;
+    bottom: 1.1em;    
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 720px;
+    height: 16px;
+    border: 10px solid #CCCCCC;
+    background: #999999;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+#progreso{
+    width: 0px;
+    height: 16px;
+    background: rgba(0,0,150,.2);
+}
+/*con esta etiqueta podemos poner facilmente un elemento html ya sea texto o en este caso 
+un conjunto de botones en la izquierda o derecha lo unico que hace falta es ajustarlo bien mas
+arriba o abajo*/
+aside{
+    position: relative;
+    bottom: 25em;
+    float: right;
+    display: grid;
+    margin-right: 10em;
+    width: 7%;
+    height: 15em;
+}
+
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+input{
+    background-color: #e34c26;
+    color: white;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+/*Bloque que contiene las imagenes de los lenguajes y sus textos, rodeados por el movil mediante los ultimos border */
+
+footer{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: white;
+    text-align: center;
+    font-size: 0.7em;
+    background-image: linear-gradient(to bottom, #00b3ff, #686868);
+    border-top: 6px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/*Sin esto el texto del footer se habia descuadrado, supongo que sera por algun cambio de los de arriba 
+o bien del aside*/
+b{
+    margin-left: 19em;
+}

@@ -1,0 +1,41 @@
+html body{
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    margin: 0.4%;
+}
+
+footer{
+    text-align: center;
+}
+
+
+#parr1, #parr2{
+    background-color: rgb(204, 194, 194);
+    width: 35%;
+    border: 1px transparent black;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+
+#arch {
+    float: right;
+    display: grid;
+
+}
+
+#acerca{
+    float: right;
+    display: grid;
+    margin-left: 79%;
+
+
+}
