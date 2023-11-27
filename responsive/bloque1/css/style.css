@@ -1,0 +1,36 @@
+#contenedor .bloque {
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+  border: 1px solid #333;
+  background: #999;
+  margin: 20px;
+}
+
+#contenedor .bloque:nth-child(odd){
+  background-color: red;
+}
+
+#contenedor .bloque:nth-child(even){
+  background-color: yellow;
+}
+
+@media all and (max-width: 800px) {
+  #contenedor .bloque {
+    /* Cuando el ancho sea inferior a
+800px el elemento será un bloque */
+    display: block !important;
+    width: auto !important;
+  }
+  #contenedor .bloque:nth-child(1){
+    background-color: red;
+  }
+  
+  #contenedor .bloque:nth-child(2){
+    background-color: yellow;
+  }
+  #contenedor .bloque:nth-child(3){
+    background-color: purple;
+  }
+}
+

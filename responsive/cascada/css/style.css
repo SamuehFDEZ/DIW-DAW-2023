@@ -1,0 +1,33 @@
+@media all and (max-width: 600px) {
+  div,
+  nav,
+  header,
+  aside,
+  main {
+    /* Cuando el ancho sea inferior a 600px el elemento será un bloque */
+    display: block !important;
+    /* Se ajustarán al ancho de la ventana */
+    width: 100% !important;
+    margin: auto !important;
+    /* La posición será estática (flujo normal del documento) */
+    position: static !important;
+    /* los elementos dejarán de ser flotantes */
+    float: none !important;
+  }
+}
+
+nav{
+    background-color: pink;
+}
+
+header{
+    background-color: green;
+}
+
+aside{
+    background-color: purple;
+}
+
+main{
+    background-color: gray;
+}
