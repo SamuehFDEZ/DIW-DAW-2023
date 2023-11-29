@@ -1,24 +1,11 @@
-nav{
-    background-color: pink;
+nav,header, aside, main{
+    font-size: 3vw;
+
 }
 
-header{
-    background-color: green;
-    height: 250px;
-}
-
-aside{
-    background-color: purple;
-    height: 150px;
-}
-
-main{
-    position: relative;
-    background-color: gray;
-    height: 150px;
-    left: 400px;
-    bottom: 150px;
-    width: 150%;
+.responsive{
+    width: 100%;
+    height: auto;
 }
 
 @media all and (width < 600px) {
@@ -37,9 +24,4 @@ main{
     /* los elementos dejarán de ser flotantes */
     float: none;
   }
-  
-  aside{
-    height: 500px ;
-  }
-
 }

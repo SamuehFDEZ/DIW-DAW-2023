@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  font-weight: bold;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: left;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 10px;
+  text-decoration: none;
+  color: #444;
+}
+
+nav ul li a:hover {
+  background-color: #ccc;
+}
+
+nav > a {
+  display: none;
+}
+
+@media all and (max-width: 475px) {
+  nav ul {
+    display: none;
+  } /* ocultamos el menú de navegación */
+  nav > a /* mostramos el enlace con el texto Menú */ {
+    display: block;
+    padding: 0 1em 0;
+    text-align: center;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #0084b4;
+    text-decoration: none;
+    margin: 3px;
+  }
+  /* Con la clase desplegado el menú se mostrará verticalmente */
+  ul.desplegado {
+    display: block;
+    list-style: none;
+  }
+  ul.desplegado li {
+    display: block;
+    text-align: center;
+  }
+  ul.desplegado li a {
+    display: block;
+    border-bottom: 1px solid #ccc;
+  }
+}
