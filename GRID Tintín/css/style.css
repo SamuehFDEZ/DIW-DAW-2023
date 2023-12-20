@@ -1,0 +1,153 @@
+/*Colores*/
+:root {
+  --yellow: #ffc600;
+  --black: #272727;
+  --grey: #a1a1a1;
+}
+
+html {
+  /* border-box box model allows us to add padding and border to our elements without increasing their size */
+  /* A system font stack so things load nice and quick! */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 10px;
+  color: var(--black);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+/*
+  WAT IS THIS?!
+  We inherit box-sizing: border-box; from our <html> selector
+  Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
+*/
+
+body {
+  background-image: url("./topography.svg"),
+    linear-gradient(110deg, #06be34, #6d47d9);
+  background-size: 340px, auto;
+  min-height: calc(100vh - 100px);
+  margin: 50px 50px 50px 50px;
+  /* background: white; */
+}
+
+h1 {
+  text-align: center;
+}
+
+nav {
+  float: left;
+  width: 25%;
+}
+
+a{
+  text-decoration: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  float: left;
+  width: 50%;
+}
+
+.div2 {
+  grid-area: 1 / 1 / 2 / 2;
+  border: 2px solid white;
+}
+.div3 {
+  grid-area: 1 / 2 / 2 / 3;
+  border: 2px solid white;
+}
+.div4 {
+  grid-area: 1 / 3 / 2 / 4;
+  border: 2px solid white;
+}
+.div5 {
+  grid-area: 2 / 1 / 3 / 2;
+  border: 2px solid white;
+}
+.div6 {
+  grid-area: 2 / 2 / 3 / 3;
+  border: 2px solid white;
+}
+.div7 {
+  grid-area: 2 / 3 / 3 / 4;
+  border: 2px solid white;
+}
+.div8 {
+  grid-area: 3 / 1 / 4 / 2;
+  border: 2px solid white;
+}
+
+.verde{
+  border: 5px solid green;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  list-style: none;
+  text-decoration: none;
+  width: 175px;
+  height: 325px;
+}
+
+.div01 {
+  grid-area: 1 / 1 / 2 / 2;
+  box-shadow: 15px 12px 29px 0px rgba(0, 0, 0, 0.76);
+  color: purple;
+  font-weight: bold;
+  font-size: 25px;
+}
+.div02 {
+  grid-area: 2 / 1 / 3 / 2;
+  box-shadow: 15px 12px 29px 0px rgba(0, 0, 0, 0.76);
+  color: blue;
+  font-weight: bold;
+  font-size: 25px;
+}
+.div03 {
+  grid-area: 3 / 1 / 4 / 2;
+  box-shadow: 15px 12px 29px 0px rgba(0, 0, 0, 0.76);
+  color: blue;
+  font-weight: bold;
+  font-size: 25px;
+}
+.div04 {
+  grid-area: 4 / 1 / 5 / 2;
+  box-shadow: 15px 12px 29px 0px rgba(0, 0, 0, 0.76);
+  color: blue;
+  font-weight: bold;
+  font-size: 25px;
+}
+.div05 {
+  grid-area: 5 / 1 / 6 / 2;
+  box-shadow: 15px 12px 29px 0px rgba(0, 0, 0, 0.76);
+  color: purple;
+  font-weight: bold;
+  font-size: 25px;
+}
+.div06 {
+  grid-area: 6 / 1 / 7 / 2;
+  box-shadow: 15px 12px 29px 0px rgba(0, 0, 0, 0.76);
+  color: purple;
+  font-weight: bold;
+  font-size: 25px;
+}
+.div07 {
+  grid-area: 7 / 1 / 8 / 2;
+  box-shadow: 15px 12px 29px 0px rgba(0, 0, 0, 0.76);
+  color: purple;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+footer{
+  clear: both;
+}
