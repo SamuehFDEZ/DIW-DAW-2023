@@ -1,0 +1,125 @@
+/*Variables*/
+$colorTexto: #666;
+$colorTextoHover: #fff;
+$colorBg: #eee;
+$colorListaHover: #888;
+
+/*Para establecer el color del texto y el color del fondo*/
+@mixin colorTextoFondo() {
+  color: $colorTexto;
+  background: $colorBg;
+}
+
+/*Para establecer el color del texto y el color del fondo, pero en este 
+caso para cuando pasamos con el ratón sobre él*/
+
+@mixin colorTextoFondoHover() {
+  color: $colorTextoHover;
+  background-color: $colorBg;
+}
+
+/*Para el box-sizing independientemente del tipo de navegador, el valor que
+tomará el box-sizing será un parámetro que le pasaremos cuando lo invoquemos.*/
+
+@mixin box-sizing($box) {
+  -webkit-box-sizing: $box;
+  -moz-box-sizing: $box;
+  box-sizing: $box;
+}
+
+/*Para las transiciones independientemente del navegador, a este mixin le
+enviaremos los argumentos de: property, duration y timing. Este último tendrá el
+valor por defecto linear*/
+
+@mixin transicion($property, $duration, $timing: linear) {
+  -webkit-transition: $property, $duration, $timing;
+  -moz-transition: $property, $duration, $timing;
+  transition: $property, $duration, $timing;
+}
+
+/*Para las animaciones (transiciones) donde también estarán determinadas por el
+navegador, los argumentos que usaremos en este mixing son: name, duration y
+timing. Este último tendrá el valor por defecto linear.*/
+
+@mixin animacion($name, $duration, $timing: linear) {
+  -webkit-transition: $name, $duration, $timing;
+  -moz-transition: $name, $duration, $timing;
+  transition: $name, $duration, $timing;
+}
+
+/*Para el footer, deberemos invocar al mixin que hemos creado para los colores
+de texto y del fondo, y el mixin para el box-sizing además de usar el resto de
+propiedades que vienen definidas en el archivo screen.css*/
+
+header {
+    @include colorTextoFondo();
+    font-size: 80px;
+    @include animacion(si, 0.5s, 0.2s)
+}
+
+
+nav {
+    @include box-sizing(box-sizing);
+    ul {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+
+        .categoria {
+            position: relative;
+            display: inline-block;
+
+
+            a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                background-color: grey; /* Cambia al color que desees */
+                color: white;
+
+                &:hover {
+                    color: #000;
+                    background-color: #eaeaea;
+                }
+
+                .submenu {
+                    display: none;
+                    position: absolute;
+                    background-color: #f1f1f1;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                    z-index: 1;
+                    overflow: hidden;
+                    height: 0;
+
+
+                    li {
+                        list-style: none;
+                        a {
+                            color: $colorTexto;
+                            padding: 10px; /* Agrega padding para hacer visible el contenido */
+
+                            &:hover {
+                                background: $colorBg;
+                                color: $colorTexto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:hover .submenu {
+                display: block;
+            }
+        }
+    }
+}
+
+
+
+footer {
+    @include colorTextoFondo();
+    @include box-sizing(border-box);
+    text-align: center;
+}
