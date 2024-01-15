@@ -1,0 +1,64 @@
+/*Para establecer el color del texto y el color del fondo*/
+@mixin colorTextoFondo() {
+  color: $colorTexto;
+  background: $colorBg;
+}
+
+/*Mixin de texto header*/
+@mixin colorTextoHeader() {
+  color: $colorHeader;
+  background: $bgHeader;
+}
+
+/*Para establecer el color del texto y el color del fondo, pero en este 
+caso para cuando pasamos con el ratón sobre él*/
+
+@mixin colorTextoFondoHover() {
+  color: $colorTextoHover;
+  background-color: $colorBg;
+}
+
+/*Para el box-sizing independientemente del tipo de navegador, el valor que
+tomará el box-sizing será un parámetro que le pasaremos cuando lo invoquemos.*/
+
+@mixin box-sizing($box) {
+  -webkit-box-sizing: $box;
+  -moz-box-sizing: $box;
+  box-sizing: $box;
+}
+
+/*Para las transiciones independientemente del navegador, a este mixin le
+enviaremos los argumentos de: property, duration y timing. Este último tendrá el
+valor por defecto linear*/
+
+@mixin transicion($property, $duration, $timing: linear) {
+  -webkit-transition: $property, $duration, $timing;
+  -moz-transition: $property, $duration, $timing;
+  transition: $property, $duration, $timing;
+}
+
+/*Para las animaciones (transiciones) donde también estarán determinadas por el
+navegador, los argumentos que usaremos en este mixing son: name, duration y
+timing. Este último tendrá el valor por defecto linear.*/
+
+@mixin animacion($name, $duration, $timing: linear) {
+  -webkit-transition: $name, $duration, $timing;
+  -moz-transition: $name, $duration, $timing;
+  transition: $name, $duration, $timing;
+}
+
+//size == medium: con ancho máximo de 1024px
+//size == small: con ancho máximo de 800px
+
+@mixin responsive($media){
+    @if $media == small{
+    @media(max-width: 800px){
+        @content
+    }
+    }
+    @else if $media == medium{
+        @media(max-width: 1024px){
+            @content
+        }
+    }
+}

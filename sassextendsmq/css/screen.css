@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/*imports*/
+/*Para establecer el color del texto y el color del fondo*/
+/*Mixin de texto header*/
+/*Para establecer el color del texto y el color del fondo, pero en este 
+caso para cuando pasamos con el ratón sobre él*/
+/*Para el box-sizing independientemente del tipo de navegador, el valor que
+tomará el box-sizing será un parámetro que le pasaremos cuando lo invoquemos.*/
+/*Para las transiciones independientemente del navegador, a este mixin le
+enviaremos los argumentos de: property, duration y timing. Este último tendrá el
+valor por defecto linear*/
+/*Para las animaciones (transiciones) donde también estarán determinadas por el
+navegador, los argumentos que usaremos en este mixing son: name, duration y
+timing. Este último tendrá el valor por defecto linear.*/
+#contenido .col-left {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+#contenido .col-left {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid #bbb;
+}
+
+/*Variables*/
+/*Para el footer, deberemos invocar al mixin que hemos creado para los colores
+de texto y del fondo, y el mixin para el box-sizing además de usar el resto de
+propiedades que vienen definidas en el archivo screen.css*/
+@keyframes iluminar {
+  from {
+    color: #eee;
+    background-color: #666;
+  }
+  to {
+    color: #fff;
+    background-color: #888;
+  }
+}
+header {
+  color: #444;
+  background: #eee;
+  padding: 12px 30px;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #aaa;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/*nav: (ul) (>ul) (a) (a:hover)*/
+nav {
+  position: absolute;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+nav > ul {
+  width: 100%;
+  height: 32px;
+  color: #eee;
+  background: #666;
+  display: flex;
+  justify-content: space-between;
+}
+nav a {
+  color: #eee;
+  background: #666;
+  text-decoration: none;
+  width: 160px;
+  padding: 7px 20px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+nav a:hover {
+  color: #fff;
+  background-color: #666;
+  transition: iluminar, 0.4s, linear;
+}
+
+/*ul: (.submenu)*/
+ul.submenu {
+  position: absolute;
+  height: 0px;
+  overflow: hidden;
+  transition: height, 0.5s, ease-out;
+}
+
+/*li: (.categoria) (>a) (.categoria:hover) (ul.submenu)*/
+li.categoria {
+  float: left;
+}
+li.categoria:hover ul.submenu {
+  height: 100px;
+}
+li.categoria:hover > a {
+  padding: 10px 20px;
+}
+li.categoria > a {
+  transition: padding, 0.4s, ease-out;
+}
+
+#contenido {
+  padding: 30px 20px;
+}
+#contenido .col-left {
+  box-sizing: border-box;
+  width: 30%;
+  float: left;
+  padding: 10px;
+}
+@media (max-width: 800px) {
+  #contenido .col-left {
+    float: none;
+    width: 100%;
+  }
+}
+#contenido .col-right {
+  box-sizing: border-box;
+  margin-left: 30%;
+  width: 70%;
+  padding: 10px;
+}
+#contenido .col-right h1 {
+  color: #0c3e7c;
+  font-size: 1.6em;
+}
+@media (max-width: 800px) {
+  #contenido .col-right {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+footer {
+  color: #eee;
+  background: #666;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  padding: 5px;
+}/*# sourceMappingURL=screen.css.map */
