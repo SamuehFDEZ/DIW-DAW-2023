@@ -1,7 +1,7 @@
 /*Para establecer el color del texto y el color del fondo*/
 @mixin colorTextoFondo() {
-  color: $colorTexto;
-  background: $colorBg;
+  color: $colorText;
+  background: $colorBack;
 }
 
 /*Mixin de texto header*/
@@ -14,8 +14,8 @@
 caso para cuando pasamos con el ratón sobre él*/
 
 @mixin colorTextoFondoHover() {
-  color: $colorTextoHover;
-  background-color: $colorBg;
+  color: $colorTextHover;
+  background-color: $colorBack;
 }
 
 /*Para el box-sizing independientemente del tipo de navegador, el valor que

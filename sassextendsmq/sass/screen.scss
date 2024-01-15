@@ -9,6 +9,8 @@ $colorBack: #15a;
 $colorBackHover: lighten(#15a, 10%);// DEBEMOS CALCULARLO
 $colorTitulo: darken(#15a, 10%);// DEBEMOS CALCULARLO
 $colorListaHover: #888;
+$colorHeader:#444;
+$bgHeader:#eee;
 
 
 /*Para el footer, deberemos invocar al mixin que hemos creado para los colores
@@ -113,13 +115,27 @@ li.categoria{
     width: 30%;
     float: left;
     padding: 10px;
-    @extend %input-block;
-    @extend %button-block;
+    input{
+      @extend %input-block;
+    }
+    button{
+      @extend %button-block;
+    }
     @include responsive(small){
       float: none; 
       width: 100%;
     }
-   
+    .button-action{
+      background-color: $colorBack;
+      color: $colorText;
+      &:hover{
+        background-color: $colorBack;
+        background-color: lighten(#15a, 20%);
+      }
+      @include responsive(medium){
+        padding: 10px 20px;
+      }
+    }
   }
   .col-right{
     box-sizing: border-box;
