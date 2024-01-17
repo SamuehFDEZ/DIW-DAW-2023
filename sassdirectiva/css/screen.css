@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/*Variables*/
+/*imports*/
+/*Para establecer el color del texto y el color del fondo*/
+/*Mixin de texto header*/
+/*Para establecer el color del texto y el color del fondo, pero en este 
+  caso para cuando pasamos con el ratón sobre él*/
+/*Para el box-sizing independientemente del tipo de navegador, el valor que
+  tomará el box-sizing será un parámetro que le pasaremos cuando lo invoquemos.*/
+/*Para las transiciones independientemente del navegador, a este mixin le
+  enviaremos los argumentos de: property, duration y timing. Este último tendrá el
+  valor por defecto linear*/
+/*Para las animaciones (transiciones) donde también estarán determinadas por el
+  navegador, los argumentos que usaremos en este mixing son: name, duration y
+  timing. Este último tendrá el valor por defecto linear.*/
+#contenido .col-left button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+#contenido .col-left input {
+  text-align: center;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid #bbb;
+}
+
+/*Vamos a realizar un cambio con respecto al hover del botón del login, de forma que si el
+estilo del tema es light el color del botón será el color de fondo oscurecido un 10%, pero
+en el caso contrario el color de fondo será aclarado un 20%. Cambiaremos el color del
+botón en ambos casos por el color del texto (#eee)
+Crea una lista con cada una de las clases de los iconos que debemos insertar (menu,
+news, money y contact ), su path, la posición, y su alto y ancho. Recorre esa lista darle
+valor a cada clase de forma que tengamos como resultado, por ejemplo:
+
+.icon-news {
+background-image: url("../images/news.png"); background-
+position: 0px -90px; height: 30px; width: 39px;
+}
+
+Ejemplo de lista:
+$icons:((icon-menu, "../images/menu.png", 0px, -30px, 50px, 54px),...)
+NOTA: Las imágenes están insertadas dentro del elemento “i” de HTML. Para que se
+muestren adecuadamente debes aplicar a la propiedad display el valor inline-block.
+*/
+.icon-menu {
+  background: url(../img/menu.png);
+}
+
+.icon-news {
+  background: url(../img/news.png);
+}
+
+.icon-money {
+  background: url(../img/money.png);
+}
+
+.icon-contact {
+  background: url(../img/contact.png);
+}
+
+/*Realiza los cambios correspondientes para los distintos menús. Debemos tener en
+cuenta que para el anterior menú sólo debemos especificar que el nav corresponde al
+nav con identificador desktop, pero el nav del nuevo menú deberemos generarlo
+nosotros, para ello nos basaremos en el fichero screen.css que hay en el Moodle (nav
+con identificador mobile).*/
+nav#desktop {
+  position: absolute;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav#desktop ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+nav#desktop > ul {
+  width: 100%;
+  height: 32px;
+  color: #eee;
+  background: #15a;
+  display: flex;
+  justify-content: space-between;
+}
+nav#desktop a {
+  color: #eee;
+  background: #15a;
+  text-decoration: none;
+  width: 160px;
+  padding: 7px 20px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+nav#desktop a:hover {
+  color: white;
+  background-color: #15a;
+  transition: iluminar, 0.4s, linear;
+}
+
+/*ul: (.submenu)*/
+ul.submenu {
+  position: absolute;
+  height: 0px;
+  overflow: hidden;
+  transition: height, 0.5s, ease-out;
+}
+
+/*li: (.categoria) (>a) (.categoria:hover) (ul.submenu)*/
+li.categoria {
+  float: left;
+}
+li.categoria:hover ul.submenu {
+  height: 100px;
+}
+li.categoria:hover > a {
+  padding: 10px 20px;
+}
+li.categoria > a {
+  transition: padding, 0.4s, ease-out;
+}
+
+#contenido {
+  padding: 30px 20px;
+}
+#contenido .col-left {
+  box-sizing: border-box;
+  width: 30%;
+  float: left;
+  padding: 10px;
+}
+@media (max-width: 800px) {
+  #contenido .col-left {
+    float: none;
+    width: 100%;
+  }
+}
+#contenido .col-left .button-action {
+  background-color: #15a;
+  color: #eee;
+}
+#contenido .col-left .button-action:hover {
+  background-color: #15a;
+  background-color: #3686eb;
+}
+@media (max-width: 1024px) {
+  #contenido .col-left .button-action {
+    padding: 10px 20px;
+  }
+}
+#contenido .col-right {
+  box-sizing: border-box;
+  margin-left: 30%;
+  width: 70%;
+  padding: 10px;
+}
+#contenido .col-right h1 {
+  color: #0c3e7c;
+  font-size: 1.6em;
+}
+@media (max-width: 800px) {
+  #contenido .col-right {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+#contenido i {
+  display: inline-block;
+}
+
+#navmobile {
+  display: none;
+  float: right;
+}
+@media (max-width: 1024px) {
+  #navmobile {
+    display: block;
+  }
+}
+#navmobile:hover ul {
+  height: auto;
+}
+#navmobile ul {
+  margin: 0px;
+  height: 0px;
+  overflow: hidden;
+  list-style-type: none;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+}
+#navmobile ul a {
+  color: #eee;
+  background-color: #138;
+  text-decoration: none;
+  width: 160px;
+  padding: 7px 20px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+#navmobile ul a:hover {
+  color: white;
+  background-color: #1744b5;
+  transition: iluminar, 0.4s, linear;
+}
+
+/*Vamos a crearnos una variable llamada $theme, le daremos el valor de dark y mediante
+el uso de directivas haremos que si el theme es dark el color de fondo sea #138, pero si
+el theme es light el color de fondo será #ddf y el color del texto #138. Antes de comprobar
+el theme pon por defecto que el valor del fondo es el que teníamos hasta ahora. Juega
+con los valores del theme para ver que los cambios se aplican correctamente.*/
+@keyframes iluminar {
+  from {
+    color: #eee;
+    background-color: #666;
+  }
+  to {
+    color: #fff;
+    background-color: #888;
+  }
+}
+header {
+  color: #444;
+  background: #eee;
+  padding: 12px 30px;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #aaa;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/*Para el footer, deberemos invocar al mixin que hemos creado para los colores
+de texto y del fondo, y el mixin para el box-sizing además de usar el resto de
+propiedades que vienen definidas en el archivo screen.css*/
+footer {
+  color: #eee;
+  background: #15a;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  padding: 5px;
+}/*# sourceMappingURL=screen.css.map */

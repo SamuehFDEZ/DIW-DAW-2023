@@ -1,0 +1,71 @@
+/*Variables*/
+$colorText: #eee;
+$colorTextHover : lighten(#eee, 10%);// DEBEMOS CALCULARLO
+$colorBack: #15a;
+$colorBackHover: lighten(#15a, 10%);// DEBEMOS CALCULARLO
+$colorTitulo: darken(#15a, 10%);// DEBEMOS CALCULARLO
+$colorListaHover: #888;
+$colorHeader:#444;
+$bgHeader:#eee;
+$theme: dark;
+
+/*imports*/
+@import "mixin";
+@import "contenido";
+@import "menu";
+
+
+/*Vamos a crearnos una variable llamada $theme, le daremos el valor de dark y mediante
+el uso de directivas haremos que si el theme es dark el color de fondo sea #138, pero si
+el theme es light el color de fondo será #ddf y el color del texto #138. Antes de comprobar
+el theme pon por defecto que el valor del fondo es el que teníamos hasta ahora. Juega
+con los valores del theme para ver que los cambios se aplican correctamente.*/
+
+@if $theme == dark {
+  background-color: #138;
+} @else {
+  background-color: #ddf;
+  color: #138;
+}
+
+
+
+
+@keyframes iluminar {
+    from {
+      color: #eee;
+      background-color: #666;
+    }
+    to {
+      color: #fff;
+      background-color: #888;
+    }
+  }
+
+header {
+    @include colorTextoHeader();
+    padding: 12px 30px;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaa;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*Para el footer, deberemos invocar al mixin que hemos creado para los colores
+de texto y del fondo, y el mixin para el box-sizing además de usar el resto de
+propiedades que vienen definidas en el archivo screen.css*/
+
+footer {
+    @include colorTextoFondo();
+    @include box-sizing(border-box);
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    padding: 5px;
+}
