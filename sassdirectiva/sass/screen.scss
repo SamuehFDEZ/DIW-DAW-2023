@@ -7,7 +7,7 @@ $colorTitulo: darken(#15a, 10%);// DEBEMOS CALCULARLO
 $colorListaHover: #888;
 $colorHeader:#444;
 $bgHeader:#eee;
-$theme: dark;
+$theme: light;
 
 /*imports*/
 @import "mixin";
@@ -20,14 +20,6 @@ el uso de directivas haremos que si el theme es dark el color de fondo sea #138,
 el theme es light el color de fondo será #ddf y el color del texto #138. Antes de comprobar
 el theme pon por defecto que el valor del fondo es el que teníamos hasta ahora. Juega
 con los valores del theme para ver que los cambios se aplican correctamente.*/
-
-@if $theme == dark {
-  background-color: #138;
-} @else {
-  background-color: #ddf;
-  color: #138;
-}
-
 
 
 
@@ -53,7 +45,15 @@ header {
 
 body{
     padding: 0;
-    margin: 0;
+    margin: 0;  
+    
+    @if $theme == dark {
+      background-color: #138;
+      color: #eee;
+    } @else {
+      background-color: #ddf;
+      color: #138;
+    }
 }
 
 
