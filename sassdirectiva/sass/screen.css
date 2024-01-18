@@ -257,13 +257,13 @@ header {
   font-weight: bold;
   text-shadow: 1px 1px 2px #aaa;
   font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #ddf;
+  color: #138;
 }
 
 body {
   padding: 0;
   margin: 0;
-  background-color: #ddf;
-  color: #138;
 }
 
 /*Para el footer, deberemos invocar al mixin que hemos creado para los colores
