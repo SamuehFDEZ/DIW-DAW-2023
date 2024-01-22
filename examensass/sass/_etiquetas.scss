@@ -1,0 +1,43 @@
+header {
+    @include colorTextoHeader();
+    padding: 12px 30px;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaa;
+    font-family: Georgia, "Times New Roman", Times, serif;
+
+    @if $theme == dark {
+      background-color: #138;
+      color: #eee;
+    } @else {
+      background-color: #ddf;
+      color: #138;
+    }
+}
+
+body{
+    padding: 0;
+    margin: 0;  
+}
+
+
+//Para el footer, deberemos invocar al mixin que hemos creado para los colores
+//de texto y del fondo, y el mixin para el box-sizing además de usar el resto de
+//propiedades que vienen definidas en el archivo screen.css
+//Aplicar una operación aritmética de resta.
+footer {
+    @include colorTextoFondo();
+    @include box-sizing(border-box);
+    position: fixed;
+    width: 100% ;
+    bottom: 0px;
+    padding: 5px;
+    @include responsive(small){
+      padding: 5px - $restaDePadding; //resta de padding cuando sea tamaño movil
+      // ya que los moviles tienen un tamaño menor por norma general el usuario no baja tanto para ver el footer
+      // es por ello que al reducir el padding se topará con el footer cuando llegue abajo de la pagina si o si
+      @include text(#138, white, black ); //mixin con orden de parametros universal
+      // no importa donde poner los colores
+      // si se opta por cambiar el color de fondo, de texto y de emfasis con esta funcion se hace en una linea
+    }
+}

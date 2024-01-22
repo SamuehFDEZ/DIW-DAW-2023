@@ -1,0 +1,58 @@
+//Vamos a realizar un cambio con respecto al hover del botón del login, de forma que si el
+//estilo del tema es light el color del botón será el color de fondo oscurecido un 10%, pero
+//en el caso contrario el color de fondo será aclarado un 20%. Cambiaremos el color del
+//botón en ambos casos por el color del texto (#eee)
+//Crea una lista con cada una de las clases de los iconos que debemos insertar (menu,
+//news, money y contact ), su path, la posición, y su alto y ancho. Recorre esa lista darle
+//valor a cada clase de forma que tengamos como resultado, por ejemplo:
+
+%button-block {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    @if $theme == light {
+        &:hover{
+            background-color: darken($colorBack, 10%);
+        } 
+    } @else {
+        &:hover{
+            background-color: lighten($colorBack, 20%);
+        }
+    }
+}
+
+%input-block {
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid #bbb;
+}
+
+
+//dentro del mapa:
+//$name: referencia a menu, news, etc...
+//$ruta: a las rutas
+//$backpos y backpos2 a los dos primeros numeros despues de la ruta
+//$alto el penultimo numero
+//$ancho el ultimo numero 
+
+$iconos: (
+    (menu, "../img/menu.png", 0px, 0px, 30px, 32px), 
+    (news, "../img/news.png", 0px, -90px, 30px, 39px), 
+    (money, "../img/money.png", 0px, -100px, 50px, 54px),
+    (contact, "../img/contact.png", 0px, 0px, 30px, 30px)
+);
+
+@each $name, $ruta, $backPos, $backPos2, $alto, $ancho in $iconos {
+    .icon-#{$name}{
+        background-image: url("#{$ruta}");
+        background-position: $backPos $backPos2;
+        height: $alto;
+        width: $ancho;
+    }
+}

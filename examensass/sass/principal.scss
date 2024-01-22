@@ -1,0 +1,8 @@
+//imports 
+//Importar los ficheros scss (mixins, functions, variables) en uno llamado principal.scss, hacer
+//que se creen los diferentes ficheros css que generemos. Nota: pueden haber más scss.
+@import "variables";
+@import "mixin";
+@import "contenido";
+@import "menu";
+@import "etiquetas";

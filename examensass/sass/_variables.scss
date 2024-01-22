@@ -1,0 +1,11 @@
+//Variables
+$colorText: #eee;
+$colorTextHover : lighten(#eee, 10%);// DEBEMOS CALCULARLO
+$colorBack: #15a;
+$colorBackHover: lighten(#15a, 10%);// DEBEMOS CALCULARLO
+$colorTitulo: darken(#15a, 10%);// DEBEMOS CALCULARLO
+$colorListaHover: #888;
+$colorHeader:#444;
+$bgHeader:#eee;
+$theme: light;
+$restaDePadding: 5px; //variable para restar el padding del footer cuando sea para responsive en mobile

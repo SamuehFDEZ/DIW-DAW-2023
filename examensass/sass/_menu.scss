@@ -1,0 +1,152 @@
+//Realiza los cambios correspondientes para los distintos menús. Debemos tener en
+//cuenta que para el anterior menú sólo debemos especificar que el nav corresponde al
+//nav con identificador desktop, pero el nav del nuevo menú deberemos generarlo
+//nosotros, para ello nos basaremos en el fichero screen.css que hay en el Moodle (nav
+//con identificador mobile).
+//Mediante nesting indentar para anidar la mayoría de selectores posible.
+//Implementar también un nesting de propiedades.
+nav#desktop{
+    position: absolute;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    @include responsive(medium){
+      display: none;
+    }
+    ul{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    ul.submenu{
+      position: absolute;
+      height: 0px;
+      overflow: hidden;
+      @include transicion(height,0.5s,ease-out );
+    }
+    > ul{
+        width: 100%;
+        height: 32px;
+        @include colorTextoFondo();
+      }
+    a{
+        @include colorTextoFondo();
+        text-decoration: none;
+        width: 160px;
+        padding: 7px 20px;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        &:hover{
+            @include colorTextoFondoHover();
+            @include animacion(iluminar,0.4s ,linear);
+        }
+    }
+    li.categoria{
+      float: left;
+      &:hover{
+          ul.submenu{
+              height: 100px;
+          }
+          > a{
+              padding: 10px 20px;
+          }
+      }
+      > a{
+          @include transicion(padding,0.4s,ease-out )
+      }
+    }
+}
+
+#contenido{
+  padding: 30px 20px;
+  @include responsive(medium){
+    padding: 10px 20px;
+  }
+  .col-left{
+    box-sizing: border-box;
+    width: 30%;
+    float: left;
+    padding: 10px;
+    input{
+      //Usar extend haciendo uso de selectores placeholder(%).
+      @extend %input-block;
+    }
+    button{
+      //Usar extend haciendo uso de selectores placeholder(%).
+      @extend %button-block;
+    }
+    @include responsive(small){
+      float: none; 
+      width: 100%;
+    }
+  }
+  .button-action{
+    background-color: $colorBack;
+    color: $colorText;
+    &:hover{
+      background-color: grisEscala($colorBack); // funcion de mixin.scss 
+      // para darle una tonalidad de gris en base al color de la variable en el fichero de variables.scss
+    }
+  }
+  .col-right{
+    box-sizing: border-box;
+    margin-left: 30%;
+    width: 70%;
+    padding: 10px;
+    h1{
+      color: $colorTitulo;
+      font-size: 1.6em;
+    }
+    }
+    @include responsive(small){
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+
+i{
+  display: inline-block;
+}
+
+nav#mobile{
+    display: none;
+    float: right;
+    @include responsive(medium){
+        display: block;
+    }
+    @include responsive(ultrasmall){ //para dispositivos muy pequeños mostrarlo en columna
+      // ya que hay dispositivos por debajo de 500 y esto no se contempla, esta añadido
+      display: flex;
+      flex-direction: column;
+  }
+    &:hover ul{
+        height: auto;
+    }
+    ul{
+        margin: 0px;
+        height: 0px;
+        overflow: hidden;
+        list-style-type: none;
+        position: absolute;
+        right: 10px;
+        top: 40px;
+    }
+    ul a{
+        color: #eee;
+        background-color: #138;
+        text-decoration: none;
+        width: 160px;
+        padding: 7px 20px;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        font-size: 0.6em;
+        font-weight: normal;
+        &:hover{
+            color: white;
+            background-color: #1744b5;
+            @include animacion(iluminar, 0.4s, linear);
+        }
+    }
+}
