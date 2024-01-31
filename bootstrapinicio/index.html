@@ -3,60 +3,56 @@
 
 <head>
     <title>Title</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 </head>
 
 <body>
     <header>
-        <!-- place navbar here -->
     </header>
     <main>
         <div class="container text-center">
-
             <div class="row" style="padding: 5px; border: 1px solid black;">
-                <div class="col-xl-12" style="background-color: greenyellow; border: 1px solid black; ">VERDE</div>
+                <div class="col-md" style="background-color: #28ff2e; border: 1px solid black; ">VERDE</div>
             </div>
 
             <div class="row" style="padding: 5px; border: 1px solid black; ">
-                <div class="col-xl-1" style="background-color: red; border: 1px solid black;">ROJO</div>
+                                    <!-- d-none d-sm-block oculta el rojo, si dejamos solo d-none lo oculta siempre-->
+                <div class="col-md-3 col-sm-3 d-none d-sm-block" style="background-color: #fb0d1c; border: 1px solid black;">ROJO</div>
                 <div class="col">
                     <div class="row" style="padding: 5px; border: 1px solid black;">
-                        <div class="col-xl-12" style="background-color: pink; padding: 5px; border: 1px solid black;">ROSA</div>
+                        <div class="col-md" style="background-color: #fd28fc; padding: 5px; border: 1px solid black;">ROSA</div>
                     </div>
-                    <div class="row gy-15" style="padding: 5px; border: 1px solid black; ">
-                        <div class="col-xl-6" style="background-color: orange; padding: 65px; margin: 3px; border: 1px solid black;">NAR</div>
-                        <div class="col-xl-6" style="background-color: orange; padding: 65px; margin: 3px; border: 1px solid black;">NAR</div>
+                    <div class="row" style="padding: 5px; border: 1px solid black; ">
+                        <div class="col-md-6 col-sm-12" style="background-color: #fe9a5e; padding: 65px; margin: 3px; border: 1px solid black;">NAR</div>
+                        <div class="col-md col-sm-12" style="background-color: #fe9a5e; padding: 65px; margin: 3px; border: 1px solid black;">NAR</div>
                     </div>
                     <div class="row" style="padding: 5px; border: 1px solid black;">
-                        <div class="col-xl-2" style="background-color: blue; padding: 5px; margin: 9px; border: 1px solid black;">AZUL1 COLUMNAAAAAA</div>
-                        <div class="col-xl-2" style="background-color: blue; padding: 5px; margin: 9px; border: 1px solid black;">AZUL2 COLUMNAAAAAA</div>
-                        <div class="col-xl-3" style="background-color: blue; padding: 5px; margin: 9px; border: 1px solid black;">AZUL3 COLUMNAAAAAA</div>
-                        <div class="col-xl-2" style="background-color: blue; padding: 5px; margin: 9px; border: 1px solid black;">AZUL4 COLUMNAAAAAA</div>
-                        <div class="col-xl-2" style="background-color: blue; padding: 5px; margin: 9px; border: 1px solid black;">AZUL5 COLUMNAAAAAA</div>
-                        <div class="col-xl-2" style="background-color: blue; padding: 5px; margin: 9px; border: 1px solid black;">AZUL6 COLUMNAAAAAA</div>
-                        <div class="col-xl-2" style="background-color: blue; padding: 5px; margin: 9px; border: 1px solid black;">AZUL7 COLUMNAAAAAA</div>
-                        <div class="col-xl-3" style="background-color: blue; padding: 5px; margin: 9px; border: 1px solid black;">AZUL8 COLUMNAAAAAA</div>
-                        <div class="col-xl-2" style="background-color: blue; padding: 5px; margin: 9px; border: 1px solid black;">AZUL9 COLUMNAAAAAA</div>
-                        <div class="col-xl-2" style="background-color: blue; padding: 5px; margin: 9px; border: 1px solid black;">AZUL10 COLUMNAAAAAA</div>
+                        <!-- m-md-1 margen en 1 para tamaños medianos. m-1 margen de 1 por defecto  -->
+                        <div class="col-md-2  m-md-1 col-sm-3 m-3 p-4 col-5" style="background-color: #0b23fd; padding: 5px; margin: 9px; border: 1px solid black;">AZUL1</div>
+                        <div class="col-md-2  m-md-1 col-sm-3 m-3 p-4 col-5" style="background-color: #0b23fd; padding: 5px; margin: 9px; border: 1px solid black;">AZUL2</div>
+                        <div class="col-md-3  m-md-1 col-sm-3 m-3 p-4 col-5" style="background-color: #0b23fd; padding: 5px; margin: 9px; border: 1px solid black;">AZUL3</div>
+                        <div class="col-md-2  m-md-1 col-sm-3 m-3 p-4 col-5" style="background-color: #0b23fd; padding: 5px; margin: 9px; border: 1px solid black;">AZUL4</div>
+                        <div class="col-md-2  m-md-1 col-sm-3 m-3 p-4 col-5" style="background-color: #0b23fd; padding: 5px; margin: 9px; border: 1px solid black;">AZUL5</div>
+                        <div class="col-md-2  m-md-1 col-sm-3 m-3 p-4 col-5" style="background-color: #0b23fd; padding: 5px; margin: 9px; border: 1px solid black;">AZUL6</div>
+                        <div class="col-md-2  m-md-1 col-sm-3 m-3 p-4 col-5" style="background-color: #0b23fd; padding: 5px; margin: 9px; border: 1px solid black;">AZUL7</div>
+                        <div class="col-md-3  m-md-1 col-sm-3 m-3 p-4 col-5" style="background-color: #0b23fd; padding: 5px; margin: 9px; border: 1px solid black;">AZUL8</div>
+                        <div class="col-md-2  m-md-1 col-sm-3 m-3 p-4 col-5" style="background-color: #0b23fd; padding: 5px; margin: 9px; border: 1px solid black;">AZUL9</div>
+                        <div class="col-md-2  m-md-1 col-sm-3 m-3 p-4 col-5" style="background-color: #0b23fd; padding: 5px; margin: 9px; border: 1px solid black;">AZUL10</div>
                     </div>
                 </div>
             </div>
 
             <div class="row" style="padding: 5px; border: 1px solid black;">
-                <div class="col-xl-12" style="background-color: greenyellow; border: 1px solid black;">VERDE</div>
+                <div class="col-md" style="background-color: #28ff2e; border: 1px solid black;">VERDE</div>
             </div>
         </div>
     </main>
     <footer>
-        <!-- place footer here -->
     </footer>
-    <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
