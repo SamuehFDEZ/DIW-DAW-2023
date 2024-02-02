@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>mediaquery</title>
+        <!-- Requi#fe0000 meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <style>
+
+        /*Tamaños md, lg y xl*/
+
+        @media (width >= 768px){
+            .columnHead{
+                background-color: #00ff01;
+                border: 2px solid black;
+                text-align: left;
+            }
+
+            .column1, .column2, .column3{
+                background-color: #fe0000;
+                border: 2px solid black;
+                font-size: 100px;
+                color: black;
+                padding-bottom: 270px;
+                text-align: center;
+            }
+
+            .columnFoot1{
+                background-color: #fdff00;
+                border: 2px solid black;
+                text-align: right;
+            }
+
+            .columnFoot2{
+                background-color: #fdff00;
+                border: 2px solid black;
+                text-align: left;
+
+            }
+        }
+
+        /*Tamaño sm*/
+
+
+        @media (min-width: 568px) and (max-width: 768px) {
+            .columnHead{
+                background-color: #01feff;
+                border: 2px solid black;
+            }
+
+            .column1{
+                background-color: #fe0000;
+                border: 2px solid black;
+                font-size: 100px;
+                color: black;
+                padding-bottom: 40px;
+                text-align: left;
+
+            }
+            .column2{
+                background-color: #fe0000;
+                border: 2px solid black;
+                font-size: 100px;
+                color: black;
+                padding-bottom: 40px;
+                text-align: right;
+            }
+
+            .column3{
+                background-color: #00ff01;
+                border: 2px solid black;
+                font-size: 100px;
+                color: black;
+                text-align: center;
+            }
+
+            .columnFoot1 {
+                background-color: #fdff00;
+                text-align: center;
+                border: 2px solid black;
+            }
+
+            .columnFoot2 {
+                background-color: #fdff00;
+                text-align: center;
+                border: 2px solid black;
+            }
+        }
+
+        /*tamaño xs*/
+
+        @media (max-width: 568px) {
+            .columnHead{
+                background-color: #ffb380;
+                border: 2px solid black;
+                text-align: center;
+
+            }
+
+            .column1{
+                background-color: #fe0000;
+                border: 2px solid black;
+                font-size: 100px;
+                color: black;
+                text-align: left;
+
+            }
+            .column2{
+                background-color: #01feff;
+                border: 2px solid black;
+                font-size: 100px;
+                color: black;
+                text-align: center;
+            }
+
+            .column3{
+                background-color: #fe0000;
+                border: 2px solid black;
+                font-size: 100px;
+                color: black;
+                text-align: right;
+            }
+
+            .columnFoot1 {
+                background-color: #fdff00;
+                text-align: center;
+                border: 2px solid black;
+            }
+
+            .columnFoot2 {
+                background-color: #fdff00;
+                text-align: center;
+                border: 2px solid black;
+            }
+        }
+    </style>
+
+    <body>
+        <header>
+            <!-- place navbar here -->
+        </header>
+        <main>
+            <div class="container">
+
+                <div class="row">
+                    <div class="columnHead fs-4 fst-italic m-2 p-2 col-md col-lg col-xl col-sm-12">Header</div>
+                </div>
+
+                <div class="row">
+                    <div class="column1 m-2 col-md col-lg col-xl col-sm-6">1</div>
+                    <div class="column2 mt-2 mb-2 ms-2 col-md col-lg col-xl col-sm">2</div>
+                    <div class="column3 m-2 col-md col-lg col-xl col-sm-12">3</div>
+                </div>
+
+                <div class="row">
+                    <div class="columnFoot1 columnFoote fs-4 fst-italic m-2 p-3 col-md-6 col-lg col-xl">Footer 1</div>
+                    <div class="columnFoot2 fs-4 fst-italic m-2 p-3 col-md col-lg col-xl">Footer 2</div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
