@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
+    <head>
+        <title>Bootstrap</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+    <style>
+        .columnHeader>img{
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+    <body>
+       
+            <div class="container" data-bs-theme="dark">
+                <!-- header -->
+                <div class="row" data-bs-theme="dark">
+                    <div class="columnHeader col-md-12 col-sm-6 text-md-start mt-2" data-bs-theme="dark">
+                        <img src="img/logo.png" class="w-20 p-5 img-fluid rounded float-start"> 
+                        <div class="btn-group" role="group" data-bs-theme="dark">
+                            <h4>BIPAI</h4> &nbsp;&nbsp;&nbsp;&nbsp;
+                            <a type="button" href="#bicicletas" class="btn btn-dark border border-secondary">Bicicletas</a>
+                            <a type="button" href="#accesorios" class="btn btn-dark border border-secondary">Accesorios</a>
+                            <a type="button" href="#componentes" class="btn btn-dark border border-secondary">Componentes</a>
+                          </div>
+                    </div>
+                    <!-- fin header -->
+
+                    <div class="w-10 d-md-block d-sm-none d-block"></div>
+
+
+                    <!-- nabar -->
+                    <div class="col-md col-sm col text-md-center mt-2 p-2 bg-secondary">
+                        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                            <div class="container">
+                                <a class="navbar-brand" href="#"></a>
+                                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#" aria-current="page"
+                                                >Inicio
+                                                <span class="visually-hidden">(current)</span></a
+                                            >
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#bicicletas">Bicicletas</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#accesorios">Accesorios</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#componentes">Componentes</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a
+                                                class="nav-link dropdown-toggle"
+                                                href="#"
+                                                id="dropdownId"
+                                                data-bs-toggle="dropdown"
+                                                aria-haspopup="true"
+                                                aria-expanded="false"
+                                                >Productos</a
+                                            >
+                                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                                <a class="dropdown-item" href="#">Sillines</a>
+                                                <hr class="dropdown-divider">
+                                                <a class="dropdown-item" href="#">Cascos</a>
+                                                <hr class="dropdown-divider">
+                                                <a class="dropdown-item" href="#">Tija</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <!-- fin de nabar -->
+
+                <!-- main -->
+                <div class="row">
+                    <div class="col-md">
+                        <div class="row">
+                            <div class="col-md col-sm-10 p-sm-5 text-sm-center text-md-center p-3 col-12 order-last text-center">
+                                <div id="carouselExampleIndicators" class="carousel slide">
+                                    <div class="carousel-indicators">
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                        <h5 class="text-white">Accesorios</h5>
+                                        <p class="text-white">Accesorios de la bici</p>
+                                        <img src="img/accesorios.jpg" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <h5 class="text-white">Componentes</h5>
+                                        <p class="text-white">Componentes de la bici</p>
+                                        <img src="img/componentes.jpg" class="d-block w-100" alt="...">
+                                      </div>
+                                      <div class="carousel-item">
+                                        <h5 class="text-white">Orbea</h5>
+                                        <p class="text-white">Bicicleta Orbea</p>
+                                        <img src="img/orbea.jpg" class="d-block w-100" alt="...">
+                                      </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Anterior</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="visually-hidden">Siguiente</span>
+                                    </button>
+                                  </div>
+                            </div>
+                            <!-- sidebar 1 -->
+                            <!-- explicacion de porque hay dos sidebars:
+                            ya que he tenido problemas con la maquetacion del grid, uso dos sidebars, uno para sm y otro para md -->
+                            <div class="col-sm p-5 d-md-none d-sm-block col order-first text-center">
+                                <h5 class="text-white">TOP VENTAS 2023</h5>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                    <label class="form-check-label" for="firstCheckbox">Giant</label><span class="badge text-bg-warning text-md-end">1º</span>
+                                    </li>
+
+                                    <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                    <label class="form-check-label" for="secondCheckbox">Treck</label><span class="badge text-bg-secondary text-md-end">2º</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                    <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                    <label class="form-check-label" for="thirdCheckbox">Specialized</label><span class="badge text-bg-info text-md-end">3º</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                        <label class="form-check-label" for="thirdCheckbox">Cannondale</label><span class="badge text-bg-success text-md-end">4º</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- fin de sidebar 1 -->
+                        </div>
+                        <!-- final del main -->
+
+                        <!-- inicio de las 3 cards -->
+                        <div class="row">
+                            <div class="col-md text-md-center order-md-1 col-sm-10 text-sm-center order-sm-3 p-4 bg-secondary text-center">
+                                <div id="bicicletas" class="card" style="width: 18rem;">
+                                    <img src="img/orbea.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Bicicletas</h5>
+                                      <p class="card-text">Accede a nuestra sección de bicicletas donde podrás encontrar las mejores de esta temporada</p>
+                                      <a href="bicicletas.html" class="btn btn-primary">Bicicletas</a>
+                                    </div>
+                                  </div>
+                            </div>
+
+
+                            <div class="col-md text-md-center order-md-2 col-sm-10 text-sm-center order-sm-2 p-4 bg-secondary text-center">
+                                <div id="accesorios" class="card" style="width: 18rem;">
+                                    <img src="img/accesorios.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Accesorios</h5>
+                                      <p class="card-text">Accede a nuestra sección de accesorios donde podrás encontrar lo último del mercado</p>
+                                      <a href="#" class="btn btn-primary">Accesorios</a>
+                                    </div>
+                                  </div>
+                            </div>
+
+
+                            <div class="col-md text-md-center order-md-3 col-sm-10 text-sm-center order-sm-1 p-4 bg-secondary text-center">
+                                <div id="componentes" class="card" style="width: 18rem;">
+                                    <img src="img/componentes.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Componentes</h5>
+                                      <p class="card-text">Accede a nuestra sección de componentes donde no te faltará ningun componente</p>
+                                      <a href="#" class="btn btn-primary">Componentes</a>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <!-- fin de las 3 cards -->
+
+                    </div>
+                    <!-- sidebar 2 -->
+                    <div class="col-md-4 d-md-block col-sm-2 d-sm-none p-5 text-md-start d-none">
+                        <h5 class="text-white">TOP VENTAS 2023</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                              <label class="form-check-label" for="firstCheckbox">Giant</label><span class="badge text-bg-warning text-md-end">1º</span>
+                            </li>
+
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                              <label class="form-check-label" for="secondCheckbox">Treck</label><span class="badge text-bg-secondary text-md-end">2º</span>
+                            </li>
+                            <li class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                              <label class="form-check-label" for="thirdCheckbox">Specialized</label><span class="badge text-bg-info text-md-end">3º</span>
+                            </li>
+                            <li class="list-group-item">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                <label class="form-check-label" for="thirdCheckbox">Cannondale</label><span class="badge text-bg-success text-md-end">4º</span>
+                              </li>
+                          </ul>
+                    </div>
+                    <!-- fin de sidebar 2 -->
+
+                </div>
+
+                <!-- footer -->
+                <div class="row">
+                    <div class="col-md text-md-center d-md-block d-sm-block p-2 d-none ">
+                        &copy;Samuel Arteaga López 
+                        <p class="d-inline-flex gap-1">
+                            <button class="btn btn-info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                              COPYRIGHT
+                            </button>
+                        </p>
+                          <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                Esta página es propiedad de Samuel Arteaga López                            
+                            </div>
+                          </div>
+                          <button type="button" class="btn btn-success" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="¡En construcción!">
+                            Nueva Web
+                          </button>
+                    </div>
+                </div>
+                <!-- fin footer -->
+            </div>
+        
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            var popover = new bootstrap.Popover('[data-bs-toggle="popover"]', {
+              container: 'body',
+              html: true
+            });
+          </script>
+    </body>
+</html>
